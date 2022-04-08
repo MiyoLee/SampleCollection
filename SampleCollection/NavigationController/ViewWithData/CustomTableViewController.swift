@@ -24,35 +24,50 @@ class CustomTableViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
 }
 
 //MARK: UITableView DataSource
 extension CustomTableViewController: UITableViewDataSource{
+    
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return sections.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        switch(section){
+        case 0:
+            return arrWoo.count
+        case 1:
+            return arrSung.count
+        case 2:
+            return arrCoin.count
+        default:
+            return 0
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+       
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableViewCell") as! CustomTableViewCell
         
-        let sectionNum=indexPath.section
-        let rowNum=indexPath.row
+        let sectionNum = indexPath.section
+        let rowNum = indexPath.row
         
         let img = arrImage[sectionNum]
         var title = ""
         var desc = ""
         
         switch(sectionNum){
-        case 0: title = arrWoo[rowNum]
-                desc = arrDescWoo[rowNum]
-        case 1: title = arrSung[rowNum]
-                desc = arrDescSung[rowNum]
-        case 2: title = arrCoin[rowNum]
-                desc = arrDescCoin[rowNum]
+        case 0:
+            title = arrWoo[rowNum]
+            desc = arrDescWoo[rowNum]
+        case 1:
+            title = arrSung[rowNum]
+            desc = arrDescSung[rowNum]
+        case 2:
+            title = arrCoin[rowNum]
+            desc = arrDescCoin[rowNum]
         default: NSLog("default")
             
         }
@@ -70,9 +85,11 @@ extension CustomTableViewController: UITableViewDataSource{
 
 //MARK: UITableView Delegate
 extension CustomTableViewController: UITableViewDelegate{
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
+    
 }
     
 

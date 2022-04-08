@@ -19,6 +19,5 @@ class ViewSamplesViewController: UIViewController {
         guard let LockScreenVC = self.storyboard?.instantiateViewController(withIdentifier: "LockScreenVC") else { return }
         self.navigationController?.pushViewController(LockScreenVC, animated: true)
     }
-    
 
 }

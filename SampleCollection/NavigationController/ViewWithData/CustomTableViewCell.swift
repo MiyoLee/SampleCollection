@@ -7,12 +7,10 @@
 
 import Foundation
 import UIKit
-class CustomTableViewCell : UITableViewCell{
+class CustomTableViewCell: UITableViewCell{
     
     @IBOutlet weak var imgIcon: UIImageView!
-    
     @IBOutlet weak var lbTitle: UILabel!
-    
     @IBOutlet weak var lbDesc: UILabel!
     
     func setup(title: String, desc: String, img: String){
