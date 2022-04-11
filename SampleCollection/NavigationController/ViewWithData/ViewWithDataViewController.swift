@@ -28,4 +28,8 @@ class ViewWithDataViewController: UIViewController {
         self.navigationController?.pushViewController(CustomTableVC, animated: true)
     }
     
+    @IBAction func btnMove4(_ sender: Any) {
+        guard let SettingTableVC = self.storyboard?.instantiateViewController(withIdentifier: "SettingTableVC") else { return }
+        self.navigationController?.pushViewController(SettingTableVC, animated: true)
+    }
 }

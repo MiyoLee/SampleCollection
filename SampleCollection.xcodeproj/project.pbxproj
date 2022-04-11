@@ -18,6 +18,12 @@
 		D39F480027FC2911005648AA /* Basic2TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39F47FF27FC2911005648AA /* Basic2TableViewController.swift */; };
 		D39F480227FC30D1005648AA /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39F480127FC30D1005648AA /* CustomTableViewController.swift */; };
 		D3C754D027F32DB20083D61D /* lockScreen.JPG in Resources */ = {isa = PBXBuildFile; fileRef = D3C754CF27F32DB20083D61D /* lockScreen.JPG */; };
+		D3DB4B142800039600C3598E /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DB4B132800039600C3598E /* SettingTableViewController.swift */; };
+		D3DB4B182803EAAD00C3598E /* InfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DB4B172803EAAD00C3598E /* InfoTableViewController.swift */; };
+		D3DB4B1A2803FA3E00C3598E /* UIComponentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DB4B192803FA3E00C3598E /* UIComponentsTableViewController.swift */; };
+		D3DB4B1C2803FB2600C3598E /* SampleLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DB4B1B2803FB2600C3598E /* SampleLabelViewController.swift */; };
+		D3DB4B1E280405AD00C3598E /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DB4B1D280405AD00C3598E /* InfoTableViewCell.swift */; };
+		D3DB4B20280406A100C3598E /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DB4B1F280406A100C3598E /* SettingTableViewCell.swift */; };
 		D3F6F21D27FAE0B9008B338F /* ViewSamplesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F6F21C27FAE0B9008B338F /* ViewSamplesViewController.swift */; };
 		D3F6F21F27FAE2FE008B338F /* ViewWithDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F6F21E27FAE2FE008B338F /* ViewWithDataViewController.swift */; };
 /* End PBXBuildFile section */
@@ -36,6 +42,12 @@
 		D39F47FF27FC2911005648AA /* Basic2TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basic2TableViewController.swift; sourceTree = "<group>"; };
 		D39F480127FC30D1005648AA /* CustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
 		D3C754CF27F32DB20083D61D /* lockScreen.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lockScreen.JPG; sourceTree = "<group>"; };
+		D3DB4B132800039600C3598E /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		D3DB4B172803EAAD00C3598E /* InfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewController.swift; sourceTree = "<group>"; };
+		D3DB4B192803FA3E00C3598E /* UIComponentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIComponentsTableViewController.swift; sourceTree = "<group>"; };
+		D3DB4B1B2803FB2600C3598E /* SampleLabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleLabelViewController.swift; sourceTree = "<group>"; };
+		D3DB4B1D280405AD00C3598E /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
+		D3DB4B1F280406A100C3598E /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 		D3F6F21C27FAE0B9008B338F /* ViewSamplesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewSamplesViewController.swift; path = SampleCollection/NavigationController/ViewSamples/ViewSamplesViewController.swift; sourceTree = SOURCE_ROOT; };
 		D3F6F21E27FAE2FE008B338F /* ViewWithDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewWithDataViewController.swift; path = SampleCollection/NavigationController/ViewWithData/ViewWithDataViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -97,6 +109,8 @@
 		D39F47FC27FC24AA005648AA /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				D3DB4B192803FA3E00C3598E /* UIComponentsTableViewController.swift */,
+				D3DB4B1B2803FB2600C3598E /* SampleLabelViewController.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -117,6 +131,10 @@
 				D39F47FF27FC2911005648AA /* Basic2TableViewController.swift */,
 				D39F480127FC30D1005648AA /* CustomTableViewController.swift */,
 				D320BE5327FD4ABF00234A73 /* CustomTableViewCell.swift */,
+				D3DB4B132800039600C3598E /* SettingTableViewController.swift */,
+				D3DB4B172803EAAD00C3598E /* InfoTableViewController.swift */,
+				D3DB4B1D280405AD00C3598E /* InfoTableViewCell.swift */,
+				D3DB4B1F280406A100C3598E /* SettingTableViewCell.swift */,
 			);
 			path = ViewWithData;
 			sourceTree = "<group>";
@@ -213,11 +231,17 @@
 				D32A865627EF0FAB00003953 /* MainViewController.swift in Sources */,
 				D3F6F21D27FAE0B9008B338F /* ViewSamplesViewController.swift in Sources */,
 				D32A865227EF0FAB00003953 /* AppDelegate.swift in Sources */,
+				D3DB4B142800039600C3598E /* SettingTableViewController.swift in Sources */,
 				D39F480027FC2911005648AA /* Basic2TableViewController.swift in Sources */,
+				D3DB4B20280406A100C3598E /* SettingTableViewCell.swift in Sources */,
 				D32A865427EF0FAB00003953 /* SceneDelegate.swift in Sources */,
+				D3DB4B1A2803FA3E00C3598E /* UIComponentsTableViewController.swift in Sources */,
 				D3F6F21F27FAE2FE008B338F /* ViewWithDataViewController.swift in Sources */,
+				D3DB4B182803EAAD00C3598E /* InfoTableViewController.swift in Sources */,
 				D33D1F5527FAB4A30009995F /* BasicTableViewController.swift in Sources */,
+				D3DB4B1E280405AD00C3598E /* InfoTableViewCell.swift in Sources */,
 				D39F480227FC30D1005648AA /* CustomTableViewController.swift in Sources */,
+				D3DB4B1C2803FB2600C3598E /* SampleLabelViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
