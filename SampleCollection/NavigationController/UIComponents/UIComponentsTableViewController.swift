@@ -19,4 +19,8 @@ class UIComponentsViewController: UIViewController {
         self.navigationController?.pushViewController(SampleLabelVC, animated: true)
     }
     
+    @IBAction func textFieldBtnTouched(_ sender: Any) {
+        guard let TextFieldVC = self.storyboard?.instantiateViewController(withIdentifier: "TextFieldVC") else { return }
+        self.navigationController?.pushViewController(TextFieldVC, animated: true)
+    }
 }
