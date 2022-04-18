@@ -15,6 +15,7 @@
 		D32A865B27EF0FAC00003953 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D32A865A27EF0FAC00003953 /* Assets.xcassets */; };
 		D32A865E27EF0FAC00003953 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D32A865C27EF0FAC00003953 /* LaunchScreen.storyboard */; };
 		D33D1F5527FAB4A30009995F /* BasicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33D1F5427FAB4A30009995F /* BasicTableViewController.swift */; };
+		D3506DE8280D36B700676E46 /* WebKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3506DE7280D36B700676E46 /* WebKitViewController.swift */; };
 		D39F480027FC2911005648AA /* Basic2TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39F47FF27FC2911005648AA /* Basic2TableViewController.swift */; };
 		D39F480227FC30D1005648AA /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39F480127FC30D1005648AA /* CustomTableViewController.swift */; };
 		D3C754D027F32DB20083D61D /* lockScreen.JPG in Resources */ = {isa = PBXBuildFile; fileRef = D3C754CF27F32DB20083D61D /* lockScreen.JPG */; };
@@ -40,6 +41,7 @@
 		D32A865D27EF0FAC00003953 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D32A865F27EF0FAC00003953 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D33D1F5427FAB4A30009995F /* BasicTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTableViewController.swift; sourceTree = "<group>"; };
+		D3506DE7280D36B700676E46 /* WebKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebKitViewController.swift; sourceTree = "<group>"; };
 		D39F47FF27FC2911005648AA /* Basic2TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basic2TableViewController.swift; sourceTree = "<group>"; };
 		D39F480127FC30D1005648AA /* CustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
 		D3C754CF27F32DB20083D61D /* lockScreen.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lockScreen.JPG; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				D3DB4B192803FA3E00C3598E /* UIComponentsTableViewController.swift */,
 				D3DB4B1B2803FB2600C3598E /* SampleLabelViewController.swift */,
 				D3DB4B21280566B800C3598E /* TextFieldViewController.swift */,
+				D3506DE7280D36B700676E46 /* WebKitViewController.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			files = (
 				D3DB4B22280566B800C3598E /* TextFieldViewController.swift in Sources */,
 				D320BE5427FD4ABF00234A73 /* CustomTableViewCell.swift in Sources */,
+				D3506DE8280D36B700676E46 /* WebKitViewController.swift in Sources */,
 				D32A865627EF0FAB00003953 /* MainViewController.swift in Sources */,
 				D3F6F21D27FAE0B9008B338F /* ViewSamplesViewController.swift in Sources */,
 				D32A865227EF0FAB00003953 /* AppDelegate.swift in Sources */,

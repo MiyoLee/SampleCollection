@@ -23,4 +23,9 @@ class UIComponentsViewController: UIViewController {
         guard let TextFieldVC = self.storyboard?.instantiateViewController(withIdentifier: "TextFieldVC") else { return }
         self.navigationController?.pushViewController(TextFieldVC, animated: true)
     }
+    
+    @IBAction func webKitBtnTouched(_ sender: Any) {
+        guard let WebKitVC = self.storyboard?.instantiateViewController(withIdentifier: "WebKitVC") else { return }
+        self.navigationController?.pushViewController(WebKitVC, animated: true)
+    }
 }
