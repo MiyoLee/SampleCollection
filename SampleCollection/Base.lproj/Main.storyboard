@@ -17,29 +17,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8m-PD-Oi4">
-                                <rect key="frame" x="129" y="408" width="132.33333333333337" height="40"/>
+                                <rect key="frame" x="130" y="378" width="130" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="WuD-Vu-N7n"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="View Samples">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="btnMove2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yxl-qR-vEl"/>
+                                    <action selector="viewSamplesBtnTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UFV-Vk-VwZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPo-EZ-fiY">
-                                <rect key="frame" x="124" y="518" width="142" height="40"/>
+                                <rect key="frame" x="125.33333333333333" y="468" width="139.33333333333337" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="9fk-0c-bFZ"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="View With Data">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="btnMove3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QUc-oy-vcA"/>
+                                    <action selector="viewWithDataBtnTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6hi-ys-9OE"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample Collections" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HrZ-jr-XH5">
@@ -52,30 +52,42 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyv-l4-MkG">
-                                <rect key="frame" x="123.33333333333333" y="298" width="143.66666666666669" height="40"/>
+                                <rect key="frame" x="124.66666666666669" y="288" width="141" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="UuR-xM-9qq"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="UI Components">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="btnMove1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zor-6Q-qL4"/>
+                                    <action selector="uiComponentsBtnTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cNc-yE-CzN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxr-af-n6W">
+                                <rect key="frame" x="121.66666666666669" y="558" width="147" height="34"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Library Samples">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="librarySamplesBtnTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pgr-SS-UuE"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="pyv-l4-MkG" firstAttribute="top" secondItem="HrZ-jr-XH5" secondAttribute="bottom" constant="90" id="Gja-OY-Scl"/>
+                            <constraint firstItem="rxr-af-n6W" firstAttribute="top" secondItem="qPo-EZ-fiY" secondAttribute="bottom" constant="50" id="Dhf-w7-VtJ"/>
+                            <constraint firstItem="pyv-l4-MkG" firstAttribute="top" secondItem="HrZ-jr-XH5" secondAttribute="bottom" constant="80" id="Gja-OY-Scl"/>
                             <constraint firstItem="qPo-EZ-fiY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="KRR-g4-r3m"/>
-                            <constraint firstItem="qPo-EZ-fiY" firstAttribute="top" secondItem="s8m-PD-Oi4" secondAttribute="bottom" constant="70" id="Rmp-Lb-jdj"/>
+                            <constraint firstItem="qPo-EZ-fiY" firstAttribute="top" secondItem="s8m-PD-Oi4" secondAttribute="bottom" constant="50" id="Rmp-Lb-jdj"/>
                             <constraint firstItem="s8m-PD-Oi4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ttd-cA-iyK"/>
                             <constraint firstItem="HrZ-jr-XH5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="uU7-Ih-ZWy"/>
                             <constraint firstItem="HrZ-jr-XH5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="uae-Db-CXV"/>
                             <constraint firstItem="pyv-l4-MkG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ucw-cF-Iji"/>
-                            <constraint firstItem="s8m-PD-Oi4" firstAttribute="top" secondItem="pyv-l4-MkG" secondAttribute="bottom" constant="70" id="vd1-Ns-YJA"/>
+                            <constraint firstItem="s8m-PD-Oi4" firstAttribute="top" secondItem="pyv-l4-MkG" secondAttribute="bottom" constant="50" id="vd1-Ns-YJA"/>
+                            <constraint firstItem="rxr-af-n6W" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vxL-ka-V6Q"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wr9-lW-fj1"/>
@@ -111,7 +123,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kp0-aS-jQ6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="311" y="694"/>
+            <point key="canvasLocation" x="968" y="694"/>
         </scene>
         <!--Basic2 Table View Controller-->
         <scene sceneID="2C0-Rc-QcN">
@@ -161,7 +173,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XLD-mk-fwX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="968" y="694"/>
+            <point key="canvasLocation" x="1615" y="694"/>
         </scene>
         <!--Custom Table View Controller-->
         <scene sceneID="qb2-ys-MCU">
@@ -235,12 +247,51 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wyb-vh-DXs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1635" y="694"/>
+            <point key="canvasLocation" x="2275" y="694"/>
+        </scene>
+        <!--Library Samples View Controller-->
+        <scene sceneID="sg6-4h-NuR">
+            <objects>
+                <viewController storyboardIdentifier="LibrarySamplesVC" id="y4M-ri-yFw" customClass="LibrarySamplesViewController" customModule="SampleCollection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fJe-Z4-3fB">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Library Samples" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zV-ZD-QDl">
+                                <rect key="frame" x="111.66666666666669" y="124" width="167" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqW-lv-Cwd">
+                                <rect key="frame" x="114" y="291" width="162" height="33.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Kingfisher Sample">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="kingfisherSampleBtnTouched:" destination="y4M-ri-yFw" eventType="touchUpInside" id="MnJ-c9-zAP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aHk-eT-LtQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aqW-lv-Cwd" firstAttribute="centerX" secondItem="aHk-eT-LtQ" secondAttribute="centerX" id="glM-Ly-SIb"/>
+                            <constraint firstItem="aqW-lv-Cwd" firstAttribute="top" secondItem="3zV-ZD-QDl" secondAttribute="bottom" constant="140" id="ilZ-Ex-Ryj"/>
+                            <constraint firstItem="3zV-ZD-QDl" firstAttribute="centerX" secondItem="aHk-eT-LtQ" secondAttribute="centerX" id="lyh-ha-aZL"/>
+                            <constraint firstItem="3zV-ZD-QDl" firstAttribute="top" secondItem="aHk-eT-LtQ" secondAttribute="top" constant="80" id="szZ-00-9c2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iA8-pR-zyJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2531" y="56"/>
         </scene>
         <!--Components View Controller-->
         <scene sceneID="pTB-TX-LhH">
             <objects>
-                <viewController storyboardIdentifier="UIComponents" id="aka-Cs-qcV" customClass="UIComponentsViewController" customModule="SampleCollection" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UIComponentsVC" id="aka-Cs-qcV" customClass="UIComponentsViewController" customModule="SampleCollection" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tjq-br-2Lt">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -256,99 +307,99 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MgS-bc-KUJ">
-                                <rect key="frame" x="59.999999999999993" y="244" width="66.333333333333314" height="40"/>
+                                <rect key="frame" x="59.999999999999993" y="244" width="65.333333333333314" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="nxn-e6-NeP"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Label">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="labelBtnTouched:" destination="aka-Cs-qcV" eventType="touchUpInside" id="FFH-JE-vP3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clE-s6-faF">
-                                <rect key="frame" x="252.66666666666666" y="244" width="77.333333333333343" height="40"/>
+                                <rect key="frame" x="254.33333333333334" y="244" width="75.666666666666657" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="qk0-UU-JdJ"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Switch">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTS-WL-pkU">
-                                <rect key="frame" x="244.33333333333334" y="324" width="94.333333333333343" height="40"/>
+                                <rect key="frame" x="245.99999999999997" y="324" width="92.666666666666657" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="zLV-Aq-V4z"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="TextField">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="textFieldBtnTouched:" destination="aka-Cs-qcV" eventType="touchUpInside" id="f8L-kC-kBN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yde-VQ-XDE">
-                                <rect key="frame" x="58.333333333333343" y="404" width="70" height="40"/>
+                                <rect key="frame" x="58.666666666666657" y="404" width="68" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="dy4-1G-Q56"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Slider">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4XS-yV-FE5">
-                                <rect key="frame" x="223.66666666666669" y="404" width="135.66666666666669" height="40"/>
+                                <rect key="frame" x="226" y="404" width="132.66666666666663" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="jCz-VG-S6r"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Progress View">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bvk-Dv-bB0">
-                                <rect key="frame" x="46.000000000000007" y="484" width="94.666666666666686" height="40"/>
+                                <rect key="frame" x="46.333333333333336" y="484" width="92.666666666666657" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="mbS-a1-EM5"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="TextView">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fF8-IR-wBd">
-                                <rect key="frame" x="251.99999999999997" y="484" width="78.666666666666657" height="40"/>
+                                <rect key="frame" x="253.66666666666666" y="484" width="77.333333333333343" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="iAS-YG-bLG"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="TabBar">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13R-5a-9e1">
-                                <rect key="frame" x="55.000000000000007" y="324" width="76.666666666666686" height="40"/>
+                                <rect key="frame" x="55.333333333333343" y="324" width="75" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="fzT-zJ-XnZ"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pCM-KR-720">
-                                <rect key="frame" x="249.33333333333337" y="564" width="84" height="40"/>
+                                <rect key="frame" x="250.99999999999997" y="564" width="82.666666666666657" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Tk8-Z0-67c"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Web Kit">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="webKitBtnTouched:" destination="aka-Cs-qcV" eventType="touchUpInside" id="Aav-JF-ri5"/>
@@ -383,7 +434,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oJL-QL-xyh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1195" y="9"/>
+            <point key="canvasLocation" x="-518" y="9"/>
         </scene>
         <!--View Samples View Controller-->
         <scene sceneID="DB1-qh-UNM">
@@ -403,10 +454,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hAh-v2-yHa">
-                                <rect key="frame" x="135.66666666666666" y="294" width="119" height="34"/>
+                                <rect key="frame" x="136.66666666666666" y="294" width="117" height="34"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Lock Screen">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="btnMove1:" destination="RQG-aP-cDu" eventType="touchUpInside" id="G78-gS-uug"/>
@@ -425,7 +476,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S19-Tz-oWI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-435.38461538461536" y="8.5308056872037916"/>
+            <point key="canvasLocation" x="238" y="9"/>
         </scene>
         <!--View With Data View Controller-->
         <scene sceneID="gld-mY-J85">
@@ -436,20 +487,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsx-VY-QN4">
-                                <rect key="frame" x="32" y="294" width="139.33333333333334" height="31"/>
+                                <rect key="frame" x="32" y="294" width="136.66666666666666" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Basic Table View">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="14"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="btnMove1:" destination="afd-ag-5K1" eventType="touchUpInside" id="kke-RA-5R1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prJ-yJ-U2E">
-                                <rect key="frame" x="210" y="294" width="148" height="31"/>
+                                <rect key="frame" x="212.66666666666663" y="294" width="145.33333333333337" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Basic2 Table View">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="14"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="btnMove2:" destination="afd-ag-5K1" eventType="touchUpInside" id="qW7-uY-vxB"/>
@@ -462,18 +513,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDD-TO-zeM">
-                                <rect key="frame" x="23.666666666666671" y="405" width="156" height="31"/>
+                                <rect key="frame" x="24.333333333333329" y="405" width="152.33333333333337" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Custom Table View">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="14"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="btnMove3:" destination="afd-ag-5K1" eventType="touchUpInside" id="qrO-cR-7Fo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9MX-V5-U62">
-                                <rect key="frame" x="220" y="406" width="128" height="29"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <rect key="frame" x="223" y="406" width="125" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Setting Table View"/>
                                 <connections>
@@ -500,7 +551,46 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EIb-1J-KOA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="310.76923076923077" y="8.5308056872037916"/>
+            <point key="canvasLocation" x="968" y="9"/>
+        </scene>
+        <!--Kingfisher Sample View Controller-->
+        <scene sceneID="4cB-sF-Hzs">
+            <objects>
+                <viewController storyboardIdentifier="KingfisherSampleVC" id="qE9-2C-ah2" customClass="KingfisherSampleViewController" customModule="SampleCollection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="46o-LX-fD8">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yeu-RF-tRN">
+                                <rect key="frame" x="45" y="277" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="21K-SM-pvq"/>
+                                    <constraint firstAttribute="height" constant="300" id="6rI-ef-ccW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kingfisher Sample" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKh-F0-8rJ">
+                                <rect key="frame" x="111.33333333333333" y="134" width="167.33333333333337" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ex8-Gf-TO9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Yeu-RF-tRN" firstAttribute="centerX" secondItem="ex8-Gf-TO9" secondAttribute="centerX" id="7kR-Br-0Q3"/>
+                            <constraint firstItem="HKh-F0-8rJ" firstAttribute="top" secondItem="ex8-Gf-TO9" secondAttribute="top" constant="90" id="cYK-fq-kaB"/>
+                            <constraint firstItem="Yeu-RF-tRN" firstAttribute="centerY" secondItem="ex8-Gf-TO9" secondAttribute="centerY" id="pMB-0a-P1v"/>
+                            <constraint firstItem="HKh-F0-8rJ" firstAttribute="centerX" secondItem="ex8-Gf-TO9" secondAttribute="centerX" id="ueN-vm-7aZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ivTest" destination="Yeu-RF-tRN" id="61m-5A-C09"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dtk-OY-N44" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2535.3846153846152" y="715.87677725118476"/>
         </scene>
         <!--Web Kit View Controller-->
         <scene sceneID="fVp-aG-QLV">
@@ -640,7 +730,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9mX-5O-qh3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2583.0769230769229" y="704.50236966824639"/>
+            <point key="canvasLocation" x="-1811" y="705"/>
         </scene>
         <!--Text Field View Controller-->
         <scene sceneID="dQm-Rx-JBi">
@@ -727,7 +817,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4N8-Sm-D9n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1881.5384615384614" y="705.21327014218002"/>
+            <point key="canvasLocation" x="-1142" y="705"/>
         </scene>
         <!--Sample Label View Controller-->
         <scene sceneID="QFb-Ue-qHj">
@@ -769,7 +859,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SIG-F2-59A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1195.3846153846152" y="705.21327014218002"/>
+            <point key="canvasLocation" x="-472" y="705"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="b7L-XI-0y5">
@@ -871,7 +961,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6lt-Rd-wLD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-435" y="694"/>
+            <point key="canvasLocation" x="237" y="694"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EAA-sT-UiD">
@@ -930,7 +1020,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dMm-Ud-AJ2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2293.8461538461538" y="693.83886255924165"/>
+            <point key="canvasLocation" x="3046" y="694"/>
         </scene>
         <!--Info Table View Controller-->
         <scene sceneID="tlB-Gq-fjK">
@@ -996,7 +1086,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TGT-j6-IVk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2293.8461538461538" y="1343.6018957345971"/>
+            <point key="canvasLocation" x="3045" y="1342"/>
         </scene>
     </scenes>
     <resources>

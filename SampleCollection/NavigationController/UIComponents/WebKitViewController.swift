@@ -43,6 +43,8 @@ class WebKitViewController: UIViewController {
     }
     
     func showWebView(isHidden: Bool, duration: Double) {
+        // closure 에서 [capture list] -> 순환참조 방지, 값 복사 가능
+        // capture list에 self는 자동으로 추가됨 ---> self를 통해 인스턴스에 접근
         UIView.animate(withDuration: duration, animations: { [weak self] in
             if isHidden {
                 self?.vWeb.alpha = 0
@@ -101,7 +103,7 @@ extension WebKitViewController: WKNavigationDelegate {
         NSLog("decidePolicyFor \(navigationAction.request.url!)")
         
         if let url = navigationAction.request.url {
-            if url.absoluteString.contains("https://new-m.pay.naver.com/") {
+            if url.absoluteString.contains("https://naverapp.m.naver.com/?urlScheme=naversearchapp") {
                 decisionHandler(.cancel)
                 NSLog("페이지 진입 금지 \(url)")
                 return

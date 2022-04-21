@@ -20,9 +20,9 @@ class SampleLabelViewController: UIViewController {
         
         if let text = lbLabel.text{
             
-        let attributes = [
-            NSMutableAttributedString.Key.foregroundColor: UIColor.green, .font: UIFont.systemFont(ofSize: 30, weight: UIFont.Weight.bold)
-        ]
+            let attributes = [
+                NSMutableAttributedString.Key.foregroundColor: UIColor.green, .font: UIFont.systemFont(ofSize: 30, weight: UIFont.Weight.bold)
+            ]
             
         
             lbLabel.attributedText = NSMutableAttributedString.init(string: text, attributes: attributes)

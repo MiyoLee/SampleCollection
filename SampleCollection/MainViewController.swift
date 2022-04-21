@@ -15,22 +15,28 @@ class MainViewController: UIViewController {
     }
 
 
-    @IBAction func btnMove1(_ sender: Any) {
+    @IBAction func uiComponentsBtnTouched(_ sender: Any) {
         // navigation controller 로 화면 전환
-        guard let UIComponentsVC = self.storyboard?.instantiateViewController(withIdentifier: "UIComponents") else { return }
+        guard let UIComponentsVC = self.storyboard?.instantiateViewController(withIdentifier: "UIComponentsVC") else { return }
         self.navigationController?.pushViewController(UIComponentsVC, animated: true)
     }
     
-    @IBAction func btnMove2(_ sender: Any) {
+    @IBAction func viewSamplesBtnTouched(_ sender: Any) {
         // navigation controller 로 화면 전환
         guard let ViewSamplesVC = self.storyboard?.instantiateViewController(withIdentifier: "ViewSamplesVC") else { return }
         self.navigationController?.pushViewController(ViewSamplesVC, animated: true)
     }
     
-    @IBAction func btnMove3(_ sender: Any) {
+    @IBAction func viewWithDataBtnTouched(_ sender: Any) {
         // navigation controller 로 화면 전환
         guard let ViewWithDataVC = self.storyboard?.instantiateViewController(withIdentifier: "ViewWithDataVC") else { return }
         self.navigationController?.pushViewController(ViewWithDataVC, animated: true)
+    }
+    
+    @IBAction func librarySamplesBtnTouched(_ sender: Any) {
+        // navigation controller 로 화면 전환
+        guard let LibrarySamplesVC = self.storyboard?.instantiateViewController(withIdentifier: "LibrarySamplesVC") else { return }
+        self.navigationController?.pushViewController(LibrarySamplesVC, animated: true)
     }
 }
 
