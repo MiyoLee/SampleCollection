@@ -20,6 +20,7 @@
 		D35EA59B2822BF2400EA8FED /* AlamofireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35EA59A2822BF2400EA8FED /* AlamofireViewController.swift */; };
 		D39412BA28112F2000CF5226 /* LibrarySamplesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39412B928112F2000CF5226 /* LibrarySamplesViewController.swift */; };
 		D39412BD281130A700CF5226 /* KingfisherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39412BC281130A700CF5226 /* KingfisherViewController.swift */; };
+		D398973D2823E73A00922EBC /* AlamofireTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D398973C2823E73A00922EBC /* AlamofireTableViewCell.swift */; };
 		D39F480027FC2911005648AA /* Basic2TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39F47FF27FC2911005648AA /* Basic2TableViewController.swift */; };
 		D39F480227FC30D1005648AA /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39F480127FC30D1005648AA /* CustomTableViewController.swift */; };
 		D3C754D027F32DB20083D61D /* lockScreen.JPG in Resources */ = {isa = PBXBuildFile; fileRef = D3C754CF27F32DB20083D61D /* lockScreen.JPG */; };
@@ -50,6 +51,7 @@
 		D35EA59A2822BF2400EA8FED /* AlamofireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireViewController.swift; sourceTree = "<group>"; };
 		D39412B928112F2000CF5226 /* LibrarySamplesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibrarySamplesViewController.swift; sourceTree = "<group>"; };
 		D39412BC281130A700CF5226 /* KingfisherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherViewController.swift; sourceTree = "<group>"; };
+		D398973C2823E73A00922EBC /* AlamofireTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireTableViewCell.swift; sourceTree = "<group>"; };
 		D39F47FF27FC2911005648AA /* Basic2TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basic2TableViewController.swift; sourceTree = "<group>"; };
 		D39F480127FC30D1005648AA /* CustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
 		D3C754CF27F32DB20083D61D /* lockScreen.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lockScreen.JPG; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				D35EA59A2822BF2400EA8FED /* AlamofireViewController.swift */,
+				D398973C2823E73A00922EBC /* AlamofireTableViewCell.swift */,
 			);
 			path = Alamofire;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				D3DB4B182803EAAD00C3598E /* InfoTableViewController.swift in Sources */,
 				D33D1F5527FAB4A30009995F /* BasicTableViewController.swift in Sources */,
 				D3DB4B1E280405AD00C3598E /* InfoTableViewCell.swift in Sources */,
+				D398973D2823E73A00922EBC /* AlamofireTableViewCell.swift in Sources */,
 				D39F480227FC30D1005648AA /* CustomTableViewController.swift in Sources */,
 				D39412BD281130A700CF5226 /* KingfisherViewController.swift in Sources */,
 				D3DB4B1C2803FB2600C3598E /* SampleLabelViewController.swift in Sources */,
