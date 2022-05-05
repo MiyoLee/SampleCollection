@@ -17,8 +17,9 @@
 		D32A865E27EF0FAC00003953 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D32A865C27EF0FAC00003953 /* LaunchScreen.storyboard */; };
 		D33D1F5527FAB4A30009995F /* BasicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33D1F5427FAB4A30009995F /* BasicTableViewController.swift */; };
 		D3506DE8280D36B700676E46 /* WebKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3506DE7280D36B700676E46 /* WebKitViewController.swift */; };
+		D35EA59B2822BF2400EA8FED /* AlamofireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35EA59A2822BF2400EA8FED /* AlamofireViewController.swift */; };
 		D39412BA28112F2000CF5226 /* LibrarySamplesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39412B928112F2000CF5226 /* LibrarySamplesViewController.swift */; };
-		D39412BD281130A700CF5226 /* KingfisherSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39412BC281130A700CF5226 /* KingfisherSampleViewController.swift */; };
+		D39412BD281130A700CF5226 /* KingfisherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39412BC281130A700CF5226 /* KingfisherViewController.swift */; };
 		D39F480027FC2911005648AA /* Basic2TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39F47FF27FC2911005648AA /* Basic2TableViewController.swift */; };
 		D39F480227FC30D1005648AA /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39F480127FC30D1005648AA /* CustomTableViewController.swift */; };
 		D3C754D027F32DB20083D61D /* lockScreen.JPG in Resources */ = {isa = PBXBuildFile; fileRef = D3C754CF27F32DB20083D61D /* lockScreen.JPG */; };
@@ -46,8 +47,9 @@
 		D32A865F27EF0FAC00003953 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D33D1F5427FAB4A30009995F /* BasicTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTableViewController.swift; sourceTree = "<group>"; };
 		D3506DE7280D36B700676E46 /* WebKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebKitViewController.swift; sourceTree = "<group>"; };
+		D35EA59A2822BF2400EA8FED /* AlamofireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireViewController.swift; sourceTree = "<group>"; };
 		D39412B928112F2000CF5226 /* LibrarySamplesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibrarySamplesViewController.swift; sourceTree = "<group>"; };
-		D39412BC281130A700CF5226 /* KingfisherSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherSampleViewController.swift; sourceTree = "<group>"; };
+		D39412BC281130A700CF5226 /* KingfisherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherViewController.swift; sourceTree = "<group>"; };
 		D39F47FF27FC2911005648AA /* Basic2TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basic2TableViewController.swift; sourceTree = "<group>"; };
 		D39F480127FC30D1005648AA /* CustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
 		D3C754CF27F32DB20083D61D /* lockScreen.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lockScreen.JPG; sourceTree = "<group>"; };
@@ -120,11 +122,20 @@
 			path = /Users/miyolee/XcodeProjects/SampleCollection/SampleCollection;
 			sourceTree = "<absolute>";
 		};
+		D35EA59C2823D29100EA8FED /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				D35EA59A2822BF2400EA8FED /* AlamofireViewController.swift */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
 		D39412BB2811308100CF5226 /* LibrarySamples */ = {
 			isa = PBXGroup;
 			children = (
+				D35EA59C2823D29100EA8FED /* Alamofire */,
 				D39412B928112F2000CF5226 /* LibrarySamplesViewController.swift */,
-				D39412BC281130A700CF5226 /* KingfisherSampleViewController.swift */,
+				D39412BC281130A700CF5226 /* KingfisherViewController.swift */,
 			);
 			path = LibrarySamples;
 			sourceTree = "<group>";
@@ -318,6 +329,7 @@
 				D3DB4B22280566B800C3598E /* TextFieldViewController.swift in Sources */,
 				D320BE5427FD4ABF00234A73 /* CustomTableViewCell.swift in Sources */,
 				D39412BA28112F2000CF5226 /* LibrarySamplesViewController.swift in Sources */,
+				D35EA59B2822BF2400EA8FED /* AlamofireViewController.swift in Sources */,
 				D3506DE8280D36B700676E46 /* WebKitViewController.swift in Sources */,
 				D32A865627EF0FAB00003953 /* MainViewController.swift in Sources */,
 				D3F6F21D27FAE0B9008B338F /* ViewSamplesViewController.swift in Sources */,
@@ -332,7 +344,7 @@
 				D33D1F5527FAB4A30009995F /* BasicTableViewController.swift in Sources */,
 				D3DB4B1E280405AD00C3598E /* InfoTableViewCell.swift in Sources */,
 				D39F480227FC30D1005648AA /* CustomTableViewController.swift in Sources */,
-				D39412BD281130A700CF5226 /* KingfisherSampleViewController.swift in Sources */,
+				D39412BD281130A700CF5226 /* KingfisherViewController.swift in Sources */,
 				D3DB4B1C2803FB2600C3598E /* SampleLabelViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
